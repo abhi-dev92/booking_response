@@ -26,12 +26,12 @@ INSTALLED_APPS = [
 
 DATABASES = {
     'default': {
-        'ENGINE': os.getenv('DATABASE_ENGINE', 'django.db.backends.sqlite3'),
-        'NAME': os.getenv('DATABASE_NAME', BASE_DIR / 'db.sqlite3'),
-        'USER': os.getenv('DATABASE_USER', ''),
-        'PASSWORD': os.getenv('DATABASE_PASSWORD', ''),
-        'HOST': os.getenv('DATABASE_HOST', ''),
-        'PORT': os.getenv('DATABASE_PORT', ''),
+        'ENGINE': os.getenv('DATABASE_ENGINE', 'django.db.backends.mysql'),
+        'NAME': os.getenv('DATABASE_NAME', 'db_xml_filemanager'),
+        'USER': os.getenv('DATABASE_USER', 'Eniyan'),
+        'PASSWORD': os.getenv('DATABASE_PASSWORD', 'Eniyan2025'),
+        'HOST': os.getenv('DATABASE_HOST', 'db-xml-filemanager.cluster-cd4i6qywcexa.eu-north-1.rds.amazonaws.com'),
+        'PORT': os.getenv('DATABASE_PORT', '3306'),
     }
 }
 
